@@ -1,0 +1,44 @@
+{
+  "dreamer_dataset": {
+    "source": "Katsigiannis & Ramzan 2018 IEEE Trans Affect Comput 9:396 (doi:10.1109/TAFFC.2017.2765372)",
+    "subjects": 23,
+    "video_clips": 18,
+    "eeg_channels": 14,
+    "ecg_channels": 2,
+    "sample_rate_hz": 128,
+    "emotions_labelled": [
+      "valence",
+      "arousal",
+      "dominance"
+    ],
+    "rating_scale": "1-5 (discrete)",
+    "published_accuracy_svm": 62.4,
+    "published_accuracy_cnn": 73.1
+  },
+  "sensor_fusion": {
+    "source": "Imtiaz 2021 Sensors 21:6613; Mao et al. 2019 Nature Digital Med 2:96",
+    "n_modalities": 5,
+    "individual_accuracies_pct": {
+      "Accelerometer (micro-tremor attention)": 71.3,
+      "Camera PPG (heart rate \u2192 arousal)": 78.9,
+      "Microphone (vocal stress markers)": 74.2,
+      "Touch dynamics (motor control)": 68.5,
+      "Pupillometry (camera-based)": 82.1
+    },
+    "best_single_pct": 82.1,
+    "fusion_accuracy_pct": 90.5,
+    "fusion_boost_pct": 8.4
+  },
+  "bci_classification": {
+    "source": "Craik et al. 2019 Neural Netw 119:1 (doi:10.1016/j.neunet.2019.07.009)",
+    "n_classes": 4,
+    "class_names": [
+      "Attention",
+      "Drowsiness",
+      "Stress",
+      "Meditation"
+    ],
+    "overall_accuracy_pct": 77.25000000000001,
+    "cohens_kappa": 0.30333333333333323
+  }
+}
